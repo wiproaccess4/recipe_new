@@ -1,0 +1,13 @@
+<h3>Create Recipe</h3>
+{% if error %}
+<strong> {{error}}</strong><br><br>
+{% endif %}
+<form action="." method="post">
+{% csrf_token %}
+    Name: <input type="text" name="name"><br>
+    Ingredients: <input type="text" name="ingredients"><br>
+    Process: <input type="text" name="process"><br>
+<!--    {{form.as_p}}-->
+    {{contact_form.as_p}}
+    <input type="submit">
+</form>

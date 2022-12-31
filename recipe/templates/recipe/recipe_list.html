@@ -1,0 +1,8 @@
+<h1>Hi {{name}} welcome to Recipe List. Your email address is {{email}}</h1>
+{% for each in recipes %}
+    {{each}}<br>
+{% endfor %}
+<br>
+<a href="/recipe/create/">Create Recipe</a><br>
+<a href="/recipe/contact/">Contact</a><br>
+<a href="/logout/">Logout</a>
